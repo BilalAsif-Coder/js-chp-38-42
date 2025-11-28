@@ -80,23 +80,22 @@ for (let i = 0; i < array.length; i++) {
 
 
 
-
-
-
-
-
-
 //Q no 9
 //A no 9
 
-// function overtime () {
-//     let work = 40
-//     if (40 == work  ) {
-//         console.log("No Overtime ")
-//     }else {
-//         console.log("Cut !2.00rs becuse you didn't complete hr")
-//     }
-// }overtime()
+function  overtime (worktime) {
+    let employOvertime = 0 
+    if (worktime > 40 ) {
+        employOvertime = worktime - 40 ;
+        console.log(`the overtime is ${employOvertime}hr and the overtime pay you ${employOvertime * 12}rupess`)
+    }else {
+        console.log(`There is no overtime `);
+        
+    }
+
+}
+console.log(overtime(50))
+
 
 
 
